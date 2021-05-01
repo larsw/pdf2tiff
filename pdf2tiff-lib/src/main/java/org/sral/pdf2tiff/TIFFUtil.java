@@ -88,7 +88,7 @@ class TIFFUtil {
         ifd.appendChild(createShortField(296, "ResolutionUnit", 2)); // Inch
 
         ifd.appendChild(createLongField(278, "RowsPerStrip", image.getHeight()));
-        ifd.appendChild(createAsciiField(305, "Software", "PDFBOX"));
+        ifd.appendChild(createAsciiField(305, "Software", "pdf2tiff"));
 
         if (image.getType() == BufferedImage.TYPE_BYTE_BINARY &&
                 image.getColorModel().getPixelSize() == 1)
